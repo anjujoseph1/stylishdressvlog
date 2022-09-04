@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(252, 0, 0);
+}
+
+li {
+  float: left;
+  border-right:1px solid rgb(0, 0, 0);
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(151, 9, 75);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(122, 19, 170);
+}
+
+.active {
+  background-color: #1ebfca;
+}
+</style>
+</head>
+<body>
+  
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a class="active"href="{% url 'log' %}">Login</a></li>
+  <li><a class="active"href="#">Log Out</a></li>
+  <li><a class="active" href="{% url 'register' %}">Register</a></li>
+  <li style="float:right"><a class="active"href="{% url 'cartDetails' %}"><i class="fa fa-shopping-cart" style="font-size:14px; color:white">&nbsp;{{itc}}</i></a></li>
+</ul>
+
+</body>
+</html>
+      
+     
+{% block content %}
+{% endblock %}
