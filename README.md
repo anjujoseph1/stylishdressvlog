@@ -1,4 +1,4 @@
-# stylishdressvlog
+# Stylish-Dress-Vlog
 ## fashion-website
 Python & Django Fashion e-commerce website. An easy to use, free and open source laravel ecommerce platform to build your online shop in no time.The development of the project was done using . DjangoFramework , HTML/CSS, JavaScript.
 
